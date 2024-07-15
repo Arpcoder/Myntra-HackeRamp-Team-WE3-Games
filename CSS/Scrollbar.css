@@ -1,0 +1,28 @@
+
+html {
+	--scrollbarBG: none;
+	--thumbBG: var(--dark-Gray);
+}
+.scrollbar::-webkit-scrollbar,
+body::-webkit-scrollbar {
+	width: 8px;
+}
+body,
+.scrollbar {
+	scrollbar-width: thin;
+	scrollbar-color: var(--thumbBG) var(--scrollbarBG)!important;
+}
+body::-webkit-scrollbar-track,
+.scrollbar::-webkit-scrollbar-track {
+	background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb,
+.scrollbar::-webkit-scrollbar-thumb {
+	background-color: var(--thumbBG);
+	border-radius: 6px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+
+	border: 3px solid var(--scrollbarBG);
+}
